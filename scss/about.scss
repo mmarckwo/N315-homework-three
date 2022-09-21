@@ -1,0 +1,110 @@
+.about {
+  .topSection {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .mainTextContent {
+      margin-left: 16px;
+      margin-right: 16px;
+
+      h1 {
+        font-size: 48px;
+      }
+    }
+  }
+
+  .bottomSection {
+    background-color: beige;
+
+    .aboutCoffeeStore {
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+
+      .leftSide {
+        width: 50%;
+        margin-top: 25px;
+        margin-bottom: 25px;
+
+        h1 {
+          font-size: 34px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+
+        button {
+          text-decoration: none;
+          background-color: rgb(0, 90, 255);
+          color: white;
+          padding: 15px;
+          border: none;
+          border-radius: 4px;
+          margin-top: 30px;
+          font-size: 18px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+
+      .rightSide {
+        margin-left: 100px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+
+        .imgContainer {
+          display: flex;
+          align-items: center;
+
+          img {
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+
+    .aboutRow {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      margin-top: 50px;
+      width: 60%;
+
+      .aboutItemInfo {
+        width: 30%;
+
+        .aboutItemImg {
+          height: 100px;
+          img {
+            height: 100%;
+          }
+        }
+
+        h2 {
+          margin-top: 16px;
+        }
+      }
+    }
+
+    .serveCount {
+      background-color: rgb(250, 255, 200);
+      margin-top: 50px;
+      padding: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        font-size: 32px;
+      }
+    }
+  }
+}
