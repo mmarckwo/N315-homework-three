@@ -25,5 +25,4 @@ function initApp() {
 
 $(document).ready(function () {
   initApp();
-  initListeners();
 });
