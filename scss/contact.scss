@@ -71,3 +71,36 @@
     }
   }
 }
+
+@media only screen and (max-width: 1150px) {
+  .contact {
+    .topSection {
+      .contactTopContent {
+        .contactTextAndImage {
+          display: block;
+
+          .rightSide {
+            margin-left: 0px;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .bottomSection {
+      display: block;
+
+      img {
+        width: 100%;
+      }
+
+      .contactInfo {
+        padding-top: 26px;
+        width: 100%;
+      }
+    }
+  }
+}

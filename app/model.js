@@ -4,7 +4,7 @@ export function changePage(pageID, subPage) {
       $("#app").html(data);
     }).fail((error) => {
       if (error.status == "404") {
-        //   alert("Page not found. Check your URL.");
+        alert("Page not found. Check your URL.");
       }
     });
   } else {
@@ -12,7 +12,7 @@ export function changePage(pageID, subPage) {
       $("#app").html(data);
     }).fail((error) => {
       if (error.status == "404") {
-        //   alert("Page not found. Check your URL.");
+        alert("Page not found. Check your URL.");
       }
     });
   }

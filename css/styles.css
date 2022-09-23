@@ -69,6 +69,29 @@ nav .navContent .logoAndLinks .links a:hover {
   border-bottom: 1px solid rgba(80, 80, 80, 0.52);
 }
 
+@media only screen and (max-width: 1150px) {
+  nav {
+    height: fit-content;
+  }
+  nav .navContent {
+    display: block;
+    height: 150px;
+    width: 100%;
+  }
+  nav .navContent .logoAndLinks {
+    display: block;
+    width: 100%;
+  }
+  nav .navContent .logoAndLinks .logo {
+    margin-right: 0px;
+    height: 75%;
+  }
+  nav .navContent .logoAndLinks .links {
+    min-width: 0px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
 .home .topSection {
   margin-top: 50px;
   display: flex;
@@ -120,14 +143,17 @@ nav .navContent .logoAndLinks .links a:hover {
   text-decoration: underline;
 }
 .home .topSection .homePageMainContent .mainPageTextAndImage .rightSide {
-  width: fit-content;
+  min-width: fit-content;
   max-height: 500px;
   margin-left: 100px;
   display: flex;
   justify-content: center;
 }
-.home .topSection .homePageMainContent .mainPageTextAndImage .rightSide img {
-  height: 80%;
+.home .topSection .homePageMainContent .mainPageTextAndImage .rightSide .rightSideImg {
+  width: 100%;
+}
+.home .topSection .homePageMainContent .mainPageTextAndImage .rightSide .rightSideImg img {
+  width: 100%;
   box-shadow: 0px 0px 20px rgb(100, 100, 100);
   border-radius: 5px;
 }
@@ -146,6 +172,8 @@ nav .navContent .logoAndLinks .links a:hover {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
   font-size: 28px;
 }
 .home .bottomSection .featureBox a {
@@ -176,12 +204,37 @@ nav .navContent .logoAndLinks .links a:hover {
   margin-top: 16px;
 }
 
+@media only screen and (max-width: 1150px) {
+  .home .topSection .homePageMainContent .mainPageTextAndImage {
+    display: block;
+  }
+  .home .topSection .homePageMainContent .mainPageTextAndImage .rightSide {
+    margin-top: 100px;
+    margin-left: 0px;
+  }
+  .home .topSection .homePageMainContent .mainPageTextAndImage .rightSide .rightSideImg {
+    width: auto;
+  }
+  .home .bottomSection .featureBox .featureRow {
+    display: block;
+  }
+  .home .bottomSection .featureBox .featureRow .featuredItem {
+    width: 100%;
+  }
+  .home .bottomSection .featureBox .featureRow .featuredItem .featuredItemImg {
+    display: flex;
+    justify-content: center;
+  }
+}
 .coffee .topSection {
   margin-top: 50px;
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.coffee .topSection .imgAndHeader img {
+  width: 100%;
 }
 .coffee .topSection .imgAndHeader h1 {
   font-size: 32px;
@@ -221,6 +274,16 @@ nav .navContent .logoAndLinks .links a:hover {
   font-size: 18px;
 }
 
+@media only screen and (max-width: 1150px) {
+  .coffee .bottomSection .beanRow {
+    display: block;
+  }
+  .coffee .bottomSection .beanRow .beanItem {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+}
 .products .topSection {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -302,6 +365,15 @@ nav .navContent .logoAndLinks .links a:hover {
   font-weight: bold;
 }
 
+@media only screen and (max-width: 1150px) {
+  .products .bottomSection .productArea .productRow {
+    display: block;
+  }
+  .products .bottomSection .productArea .productRow .productItem {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
 .about .topSection {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -357,10 +429,9 @@ nav .navContent .logoAndLinks .links a:hover {
 .about .bottomSection .aboutCoffeeStore .rightSide .imgContainer {
   display: flex;
   align-items: center;
+  min-width: fit-content;
 }
 .about .bottomSection .aboutCoffeeStore .rightSide .imgContainer img {
-  height: 100%;
-  width: 100%;
   border-radius: 5px;
 }
 .about .bottomSection .aboutRow {
@@ -394,6 +465,32 @@ nav .navContent .logoAndLinks .links a:hover {
   font-size: 32px;
 }
 
+@media only screen and (max-width: 1150px) {
+  .about .bottomSection .aboutCoffeeStore {
+    display: block;
+    padding-top: 16px;
+  }
+  .about .bottomSection .aboutCoffeeStore .leftSide {
+    width: 100%;
+  }
+  .about .bottomSection .aboutCoffeeStore .rightSide {
+    margin-left: 0px;
+  }
+  .about .bottomSection .aboutCoffeeStore .rightSide .imgContainer img {
+    width: 100%;
+  }
+  .about .bottomSection .aboutRow {
+    display: block;
+  }
+  .about .bottomSection .aboutRow .aboutItemInfo {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .about .bottomSection .aboutRow .aboutItemInfo .aboutItemImg {
+    display: flex;
+    justify-content: center;
+  }
+}
 .contact .topSection {
   margin-top: 100px;
   display: flex;
@@ -453,6 +550,27 @@ nav .navContent .logoAndLinks .links a:hover {
   font-size: 20px;
 }
 
+@media only screen and (max-width: 1150px) {
+  .contact .topSection .contactTopContent .contactTextAndImage {
+    display: block;
+  }
+  .contact .topSection .contactTopContent .contactTextAndImage .rightSide {
+    margin-left: 0px;
+  }
+  .contact .topSection .contactTopContent .contactTextAndImage .rightSide img {
+    width: 100%;
+  }
+  .contact .bottomSection {
+    display: block;
+  }
+  .contact .bottomSection img {
+    width: 100%;
+  }
+  .contact .bottomSection .contactInfo {
+    padding-top: 26px;
+    width: 100%;
+  }
+}
 footer {
   height: 50px;
   background-color: rgb(240, 240, 240);
@@ -470,6 +588,8 @@ footer .footerContent {
   margin-top: 25px;
   color: rgb(25, 25, 25);
   border-top: 1px solid rgba(200, 200, 200, 0.5);
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

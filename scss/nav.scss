@@ -51,3 +51,30 @@ nav {
     }
   }
 }
+
+@media only screen and (max-width: 1150px) {
+  nav {
+    height: fit-content;
+    .navContent {
+      display: block;
+      height: 150px;
+      width: 100%;
+
+      .logoAndLinks {
+        display: block;
+        width: 100%;
+
+        .logo {
+          margin-right: 0px;
+          height: 75%;
+        }
+
+        .links {
+          min-width: 0px;
+          max-width: 500px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
